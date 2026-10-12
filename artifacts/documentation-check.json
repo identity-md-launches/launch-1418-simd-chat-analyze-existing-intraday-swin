@@ -1,0 +1,538 @@
+{
+  "date": "2026-10-12",
+  "result": "PASS",
+  "finding": "0ccb014d2821065607918e3ae26b999699b32fbbe7cf38792924a2e199f4969a",
+  "initialObservation": {
+    "artifactsDirectoryExisted": false,
+    "missingReadmeTargets": [
+      "artifacts/code-improvements.md",
+      "artifacts/live-notes.md",
+      "artifacts/analytics-notes.md",
+      "artifacts/risk-notes.md",
+      "artifacts/validation.md",
+      "artifacts/budget.json",
+      "artifacts/review-before.json",
+      "artifacts/review-results.json"
+    ],
+    "gitLsFilesArtifacts": [],
+    "ignoreCause": "Machine-local artifacts/ exclusion; overridden by budgeted root .gitignore inclusions without modifying Git internals."
+  },
+  "requiredFiles": [
+    {
+      "path": "artifacts/code-improvements.md",
+      "exists": true,
+      "ordinaryFile": true,
+      "gitVisible": true
+    },
+    {
+      "path": "artifacts/live-notes.md",
+      "exists": true,
+      "ordinaryFile": true,
+      "gitVisible": true
+    },
+    {
+      "path": "artifacts/analytics-notes.md",
+      "exists": true,
+      "ordinaryFile": true,
+      "gitVisible": true
+    },
+    {
+      "path": "artifacts/risk-notes.md",
+      "exists": true,
+      "ordinaryFile": true,
+      "gitVisible": true
+    },
+    {
+      "path": "artifacts/validation.md",
+      "exists": true,
+      "ordinaryFile": true,
+      "gitVisible": true
+    },
+    {
+      "path": "artifacts/budget.json",
+      "exists": true,
+      "ordinaryFile": true,
+      "gitVisible": true
+    },
+    {
+      "path": ".imd-responses.json",
+      "exists": true,
+      "ordinaryFile": true,
+      "gitVisible": true
+    },
+    {
+      "path": "artifacts/documentation-check.json",
+      "exists": true,
+      "ordinaryFile": true,
+      "gitVisible": true
+    }
+  ],
+  "relativeMarkdownLinks": [
+    {
+      "source": "README.md",
+      "target": "artifacts/code-improvements.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "artifacts/budget.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "service/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "artifacts/live-notes.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "artifacts/analytics-notes.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "artifacts/risk-notes.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "templates/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "artifacts/validation.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "artifacts/documentation-check.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": ".imd-responses.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "artifacts/browser-results.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "artifacts/revision-results.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "artifacts/review-results.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "artifacts/live-browser-report.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "artifacts/validation.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/analytics-notes.md",
+      "target": "../src/lib/analytics.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/analytics-notes.md",
+      "target": "../src/lib/engine.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/analytics-notes.md",
+      "target": "../src/lib/scenarios.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/analytics-notes.md",
+      "target": "../src/lib/research.worker.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/analytics-notes.md",
+      "target": "../src/pages/Backtest.tsx",
+      "exists": true
+    },
+    {
+      "source": "artifacts/analytics-notes.md",
+      "target": "validation.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "upstream-files.json",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../src/lib/live.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../src/pages/Connections.tsx",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "live-notes.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../src/App.tsx",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../src/components.tsx",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../src/lib/analytics.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../src/Chart.tsx",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../src/lib/engine.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "analytics-notes.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../src/lib/scenarios.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../src/lib/research.worker.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../src/pages/Backtest.tsx",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../src/lib/risk.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../src/pages/Risk.tsx",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "risk-notes.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../src/components/AlertCenter.tsx",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../src/lib/alerts.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../dist/",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../service/README.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../templates/README.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "../PATH_BUDGET.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "live-notes.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "analytics-notes.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "risk-notes.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "validation.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/code-improvements.md",
+      "target": "budget.json",
+      "exists": true
+    },
+    {
+      "source": "artifacts/live-notes.md",
+      "target": "../src/lib/live.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/live-notes.md",
+      "target": "../src/App.tsx",
+      "exists": true
+    },
+    {
+      "source": "artifacts/live-notes.md",
+      "target": "../src/lib/validation.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/live-notes.md",
+      "target": "../src/lib/engine.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/live-notes.md",
+      "target": "../src/pages/Connections.tsx",
+      "exists": true
+    },
+    {
+      "source": "artifacts/live-notes.md",
+      "target": "../service/README.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/live-notes.md",
+      "target": "live-browser-report.json",
+      "exists": true
+    },
+    {
+      "source": "artifacts/live-notes.md",
+      "target": "validation.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/risk-notes.md",
+      "target": "../src/lib/risk.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/risk-notes.md",
+      "target": "../src/lib/alerts.ts",
+      "exists": true
+    },
+    {
+      "source": "artifacts/risk-notes.md",
+      "target": "../src/pages/Risk.tsx",
+      "exists": true
+    },
+    {
+      "source": "artifacts/risk-notes.md",
+      "target": "../src/components/AlertCenter.tsx",
+      "exists": true
+    },
+    {
+      "source": "artifacts/risk-notes.md",
+      "target": "../src/App.tsx",
+      "exists": true
+    },
+    {
+      "source": "artifacts/risk-notes.md",
+      "target": "validation.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/risk-notes.md",
+      "target": "../templates/README.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "../PATH_BUDGET.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "budget.json",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "documentation-check.json",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "check-results.json",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "budget.json",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "browser-results.json",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "live-browser-report.json",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "geometry-diagnostics.json",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "../DESIGN.md",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "../licenses/",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "../.imd-responses.json",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "browser-results.json",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "first-screen-mobile.png",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "overview-desktop.png",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "risk-result-mobile.png",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "root-export-focus.png",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "diagnostic-time-axis.png",
+      "exists": true
+    },
+    {
+      "source": "artifacts/validation.md",
+      "target": "diagnostic-equity-axis.png",
+      "exists": true
+    }
+  ],
+  "preservation": {
+    "unchangedApplicationFiles": 37,
+    "applicationSha256": {
+      "src/EquityChart.tsx": "16b3384eca0f581547894bf2970b43098e75e5a11da3b6ac709126f681b95090",
+      "src/main.tsx": "240903a71d5933c9b6910e054295ec4551c18803cd024ad6ef6d52134d96202a",
+      "src/types.ts": "a80a4dada9499281405f46e954488b8f082e709add36319e57dbfd7ab9b254a0",
+      "src/styles.css": "2ea27f715c6464a5096356f17832a953ed8f8487dfcfd60eed428dd8857d46fe",
+      "src/App.tsx": "2ca4468b1442d8a479938d755a9c8eccf3af85850050d01b65365d50eedf42f9",
+      "src/Chart.tsx": "e03bcc4a92e5d0319984751109708e81ad6b3fc866a2051605ac617837020bd1",
+      "src/components.tsx": "f24bb2955d7390bfb256046e2c89fcac7288d65871093d816713df00b5914e86",
+      "src/lib/risk.ts": "1d68d3d208f824a77bc19173fad3ff681732b3c75e3235bf1fb736b7832897a0",
+      "src/lib/scenarios.ts": "0c61a712de2be367dd51f1c8a0b08a5d12aa28ce641f357471395c93c9dd040e",
+      "src/lib/engine.ts": "e462926f8fd4da33d9e7cfb0dd221ce149f4e860005081fde083e6078abb1ab4",
+      "src/lib/alerts.ts": "324d4286e42799f4cd6b247a5654f6a6ee4bf7d9879e5112caf231813e253a7c",
+      "src/lib/live.ts": "89f9b1fc9e319675a08dd2e687c4a20d38648bf8e9ea6d936714e73bd2607d81",
+      "src/lib/data.ts": "a2568f150315be613af5fc295bb8c541f9901c528e1cf2dd6dac4db9766d34ae",
+      "src/lib/analytics.ts": "6ac511f98b79e5b5d6ae11d191298252d8143720a62f8faff80b574a820cf890",
+      "src/lib/research.worker.ts": "7a6887e3eaa8cb80570de8d2949b39caf3a073913cc566602f7791fd3adc2cd5",
+      "src/lib/storage.ts": "a82f32ad9cfaa10465372248c00780f8a6cdf465785115e1bcb3cc2b8fb0901e",
+      "src/lib/validation.ts": "891024bf4aa666daa93541c4fca6773e454f373a0459d938caeafa29bc9efd02",
+      "src/pages/Backtest.tsx": "62b1861e896b67e31d2a2454d707db545a5192bea0adb9be247d88371de3a3d5",
+      "src/pages/Guide.tsx": "64c2f91d0ad74da11b59dc842f193504267428baac3e78ab19ded76d836b8d28",
+      "src/pages/Risk.tsx": "f33341c69cebdfb6bff5db7206483bd0cd79868362351b044d2f599de49b6195",
+      "src/pages/Signals.tsx": "8481b4b59f228a40f931a9253297c5b289eb82d88323ad380665977289fb94d4",
+      "src/pages/Connections.tsx": "5597d97ced82cf46d3a2f3f6659d5c868bba543e634f4ba625149b870997b731",
+      "src/components/AlertCenter.tsx": "e88df1e38611be5a8d27443def81b92c057b6b8e44988393f3ef90eea924091f",
+      "public/favicon.svg": "8d447bed69e8ddcf9e5d159858956358ba1251403fcde0818e3ef65e51333196",
+      "public/og-image.png": "db7c97df2a3b3b857c0c6a861c487478332ebaa2563918a217be0604dac0824c",
+      "dist/favicon.svg": "8d447bed69e8ddcf9e5d159858956358ba1251403fcde0818e3ef65e51333196",
+      "dist/og-image.png": "db7c97df2a3b3b857c0c6a861c487478332ebaa2563918a217be0604dac0824c",
+      "dist/index.html": "21928aaa4584ddcf4f5e9b09bf605519147841d7e5bc821ed79d0f514084ef2a",
+      "dist/assets/index-Zm4U1ZT8.css": "116a70cc7e8c4a7471587f8a28ba53058c188be6a81a7b25f532d2bc80e42a26",
+      "dist/assets/research.worker-D-yfeKnt.js": "0840017ad983638e348af8a1d9a1dd88fadf2da72854f29e21fd6888297e95ce",
+      "dist/assets/index-R7VqOLMq.js": "d94356bf59d34c4bda0d3ab7d4ccd25ddb544a796769b5da333f653e3296ef04",
+      "dist/assets/inter-latin-wght-normal-Dx4kXJAl.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+      "package.json": "fe0047e8a56ce419718deb8a988b2cefb316dfb70335e3f5c1905b86b4a1cff5",
+      "package-lock.json": "4760b0d6f46362a499f16ad5c44b5ca6230f756ca0f9725542c5ddf5abf9ec87",
+      "tsconfig.json": "1a0aa8697e9ca22dc694510c2fd2ac7bdb02ee6c72128a4d742cd20730887156",
+      "vite.config.ts": "c3e081e8f98d62f84cd1bbb1ec068413e9ef37078f1afe27b4302167761410f7",
+      "index.html": "b30fff45d9a535d8a05771e182012aff332c381c5f5b4459b9397aa6ecdd3423"
+    },
+    "freshBuildByteIdenticalToDeliveredExport": true,
+    "exportFiles": [
+      "assets/index-R7VqOLMq.js",
+      "assets/index-Zm4U1ZT8.css",
+      "assets/inter-latin-wght-normal-Dx4kXJAl.woff2",
+      "assets/research.worker-D-yfeKnt.js",
+      "favicon.svg",
+      "index.html",
+      "og-image.png"
+    ]
+  },
+  "packaging": {
+    "nestedDependenciesAndCachesIgnored": true,
+    "gitVisibleDependencyArchives": 0,
+    "gitSubmodules": 0,
+    "ignoreFileWithin1024ByteBudget": true,
+    "responseWithin8192ByteBudget": true,
+    "artifactsWithin3MiB": true
+  },
+  "note": "Git-visible means existing tracked paths plus new nonignored ordinary files; no staging or commit command touched Git internals."
+}

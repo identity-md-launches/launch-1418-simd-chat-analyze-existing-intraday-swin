@@ -1,0 +1,313 @@
+{
+  "checks": [
+    "Static subpath assets, metadata, favicon, share image and local font load",
+    "Snapshot export contains the selected asset, provenance, analysis and rules",
+    "Market analysis opens; Escape closes the native dialog and restores focus",
+    "Timeframe, RSI, MACD and keyboard-accessible candle inspection controls update",
+    "Market search and chart selector change the selected asset",
+    "Source filter, text search, empty state and clear-filter recovery",
+    "Invalid thresholds show a recoverable error; saved valid rules change signals and survive reload",
+    "Paper trade confirmation records a simulated order and journal survives reload",
+    "Risk form rejects invalid stops, computes expected position and applies ATR guidance",
+    "Backtest executes, exports its ledger, rejects malformed CSV and accepts imported history",
+    "Exchange download stays dry-run; unavailable service error recovers to live fixture and demo",
+    "Stress scenarios and chronological calibration compute, export evidence and invalidate stale results",
+    "In-app test alerts, acknowledgement, persisted log and configurable cooldown work",
+    "Drawdown/daily protection arms, latches, blocks paper entries, explicitly resets; trailing preview tightens and triggers",
+    "Paper submission rechecks UTC-day equity and rejects zero-price short targets before journal persistence",
+    "WebSocket fixture updates prices, lacks fabricated sentiment, and pause blocks analysis/paper entries",
+    "390px first screen contains product and main action; mobile navigation completes",
+    "All seven views reflow without page overflow at 320, 390, 768 and 1024 pixels",
+    "Keyboard skip link, visible focused primary action, dialog focus containment and focus return",
+    "Reduced-motion preference removes button transitions",
+    "Measured foreground/background and focus/control token pairs meet their checked thresholds",
+    "No unexpected console exceptions, resource failures, or external runtime requests"
+  ],
+  "viewports": [
+    {
+      "label": "overview 1440 × 1100",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "label": "overview 390px",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "label": "sentiment 390px",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "label": "signals 390px",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "label": "risk 390px",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "label": "backtest 390px",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "label": "connections 390px",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "label": "guide 390px",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "label": "overview 320px",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "label": "sentiment 320px",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "label": "signals 320px",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "label": "risk 320px",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "label": "backtest 320px",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "label": "connections 320px",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "label": "guide 320px",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "label": "overview 768px",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "label": "sentiment 768px",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "label": "signals 768px",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "label": "risk 768px",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "label": "backtest 768px",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "label": "connections 768px",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "label": "guide 768px",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "label": "overview 1024px",
+      "width": 1024,
+      "scroll": 1024
+    },
+    {
+      "label": "sentiment 1024px",
+      "width": 1024,
+      "scroll": 1024
+    },
+    {
+      "label": "signals 1024px",
+      "width": 1024,
+      "scroll": 1024
+    },
+    {
+      "label": "risk 1024px",
+      "width": 1024,
+      "scroll": 1024
+    },
+    {
+      "label": "backtest 1024px",
+      "width": 1024,
+      "scroll": 1024
+    },
+    {
+      "label": "connections 1024px",
+      "width": 1024,
+      "scroll": 1024
+    },
+    {
+      "label": "guide 1024px",
+      "width": 1024,
+      "scroll": 1024
+    },
+    {
+      "label": "overview 200% CSS text enlargement",
+      "width": 1440,
+      "scroll": 1440
+    }
+  ],
+  "accessibility": [
+    {
+      "label": "overview desktop",
+      "violations": []
+    },
+    {
+      "label": "sentiment desktop",
+      "violations": []
+    },
+    {
+      "label": "signals desktop",
+      "violations": []
+    },
+    {
+      "label": "risk desktop",
+      "violations": []
+    },
+    {
+      "label": "backtest desktop",
+      "violations": []
+    },
+    {
+      "label": "connections desktop",
+      "violations": []
+    },
+    {
+      "label": "completed research desktop",
+      "violations": []
+    },
+    {
+      "label": "guide desktop",
+      "violations": []
+    },
+    {
+      "label": "overview mobile",
+      "violations": []
+    },
+    {
+      "label": "sentiment mobile",
+      "violations": []
+    },
+    {
+      "label": "signals mobile",
+      "violations": []
+    },
+    {
+      "label": "risk mobile",
+      "violations": []
+    },
+    {
+      "label": "backtest mobile",
+      "violations": []
+    },
+    {
+      "label": "connections mobile",
+      "violations": []
+    },
+    {
+      "label": "guide mobile",
+      "violations": []
+    }
+  ],
+  "contrast": [
+    {
+      "label": "Body",
+      "foreground": "#ecf0f5",
+      "background": "#131922",
+      "ratio": 15.42,
+      "threshold": 4.5
+    },
+    {
+      "label": "Secondary text",
+      "foreground": "#9da9b9",
+      "background": "#131922",
+      "ratio": 7.4,
+      "threshold": 4.5
+    },
+    {
+      "label": "Primary button",
+      "foreground": "#102820",
+      "background": "#72e3bf",
+      "ratio": 9.99,
+      "threshold": 4.5
+    },
+    {
+      "label": "Positive badge",
+      "foreground": "#72e3bf",
+      "background": "#18382f",
+      "ratio": 8.18,
+      "threshold": 4.5
+    },
+    {
+      "label": "Negative badge",
+      "foreground": "#ee8898",
+      "background": "#3a222e",
+      "ratio": 5.95,
+      "threshold": 4.5
+    },
+    {
+      "label": "Warning badge",
+      "foreground": "#ebc380",
+      "background": "#342d23",
+      "ratio": 8.18,
+      "threshold": 4.5
+    },
+    {
+      "label": "Focus ring / page",
+      "foreground": "#9dcaff",
+      "background": "#0c1017",
+      "ratio": 11.18,
+      "threshold": 3
+    },
+    {
+      "label": "Focus ring / surface",
+      "foreground": "#9dcaff",
+      "background": "#131922",
+      "ratio": 10.36,
+      "threshold": 3
+    },
+    {
+      "label": "Input border / field",
+      "foreground": "#657184",
+      "background": "#0c1017",
+      "ratio": 3.85,
+      "threshold": 3
+    }
+  ],
+  "consoleErrors": [],
+  "resourceErrors": [],
+  "limitations": [
+    "Chromium emulation, not a physical device or screen-reader session.",
+    "CSS text enlargement is checked separately from native browser zoom.",
+    "Provider and trading credentials are not supplied; live connection interactions use explicit fixtures."
+  ],
+  "result": "PASS"
+}

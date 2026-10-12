@@ -1,0 +1,1771 @@
+{
+  "checks": [
+    "All price ticks keep at least 4 SVG px from the close marker and each other across four intervals and seven widths; moved labels have leaders",
+    "4h inspector and live announcement distinguish the previous day by keyboard; three mobile date ticks remain visible in a non-UTC browser timezone",
+    "Successful risk calculations reveal and focus the correct result on mobile and desktop; edits and invalid submissions retain form focus"
+  ],
+  "axes": [
+    {
+      "width": 320,
+      "interval": "5m",
+      "ticks": [
+        {
+          "text": "67,007",
+          "top": 210.5179901123047,
+          "bottom": 224.87050819396973,
+          "gap": 66.6954574584961,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "67,252",
+          "top": 162.01797485351562,
+          "bottom": 176.37049293518066,
+          "gap": 18.19544219970703,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "67,498",
+          "top": 103.34051513671875,
+          "bottom": 117.69303321838379,
+          "gap": 6.129499435424805,
+          "originalY": 121,
+          "labelY": 114.8225326538086,
+          "leader": true
+        },
+        {
+          "text": "67,743",
+          "top": 65.01798248291016,
+          "bottom": 79.3705005645752,
+          "gap": 44.4520320892334,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "67,988",
+          "top": 16.51798439025879,
+          "bottom": 30.870502471923828,
+          "gap": 92.95203018188477,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "11:50",
+        "13:10",
+        "14:25"
+      ],
+      "marker": {
+        "top": 123.8225326538086,
+        "bottom": 143.8225326538086
+      },
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "interval": "15m",
+      "ticks": [
+        {
+          "text": "66,902",
+          "top": 210.5179901123047,
+          "bottom": 224.87050819396973,
+          "gap": 45.263641357421875,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "67,312",
+          "top": 170.77232360839844,
+          "bottom": 185.12484169006348,
+          "gap": 5.517974853515625,
+          "originalY": 169.5,
+          "labelY": 182.2543487548828,
+          "leader": true
+        },
+        {
+          "text": "67,723",
+          "top": 113.51797485351562,
+          "bottom": 127.87049293518066,
+          "gap": 17.38385581970215,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "68,133",
+          "top": 65.01798248291016,
+          "bottom": 79.3705005645752,
+          "gap": 65.88384819030762,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "68,543",
+          "top": 16.51798439025879,
+          "bottom": 30.870502471923828,
+          "gap": 114.38384628295898,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "06:30",
+        "10:30",
+        "14:15"
+      ],
+      "marker": {
+        "top": 145.2543487548828,
+        "bottom": 165.2543487548828
+      },
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "interval": "1h",
+      "ticks": [
+        {
+          "text": "65,546",
+          "top": 210.5179901123047,
+          "bottom": 224.87050819396973,
+          "gap": 99.05148315429688,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "66,331",
+          "top": 162.01797485351562,
+          "bottom": 176.37049293518066,
+          "gap": 50.55146789550781,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "67,116",
+          "top": 116.98448181152344,
+          "bottom": 131.33699989318848,
+          "gap": 5.517974853515625,
+          "originalY": 121,
+          "labelY": 128.4665069580078,
+          "leader": true
+        },
+        {
+          "text": "67,902",
+          "top": 65.01798248291016,
+          "bottom": 79.3705005645752,
+          "gap": 12.096006393432617,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "68,687",
+          "top": 16.51798439025879,
+          "bottom": 30.870502471923828,
+          "gap": 60.596004486083984,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "07:0017 May",
+        "23:0017 May",
+        "14:0018 May"
+      ],
+      "marker": {
+        "top": 91.46650695800781,
+        "bottom": 111.46650695800781
+      },
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "interval": "4h",
+      "ticks": [
+        {
+          "text": "60,205",
+          "top": 210.5179901123047,
+          "bottom": 224.87050819396973,
+          "gap": 140.72649383544922,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "62,421",
+          "top": 162.01797485351562,
+          "bottom": 176.37049293518066,
+          "gap": 92.22647857666016,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "64,637",
+          "top": 113.51797485351562,
+          "bottom": 127.87049293518066,
+          "gap": 43.726478576660156,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "66,852",
+          "top": 75.30947875976562,
+          "bottom": 89.66199684143066,
+          "gap": 5.517982482910156,
+          "originalY": 72.5,
+          "labelY": 86.79149627685547,
+          "leader": true
+        },
+        {
+          "text": "69,068",
+          "top": 16.51798439025879,
+          "bottom": 30.870502471923828,
+          "gap": 18.92099380493164,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "08:0013 May",
+        "00:0016 May",
+        "12:0018 May"
+      ],
+      "marker": {
+        "top": 49.79149627685547,
+        "bottom": 69.79149627685547
+      },
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "interval": "5m",
+      "ticks": [
+        {
+          "text": "67,007",
+          "top": 210.41380310058594,
+          "bottom": 224.89656257629395,
+          "gap": 66.59127044677734,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "67,252",
+          "top": 161.91380310058594,
+          "bottom": 176.39656257629395,
+          "gap": 18.091270446777344,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "67,498",
+          "top": 103.236328125,
+          "bottom": 117.71908760070801,
+          "gap": 6.103445053100586,
+          "originalY": 121,
+          "labelY": 114.8225326538086,
+          "leader": true
+        },
+        {
+          "text": "67,743",
+          "top": 64.9137954711914,
+          "bottom": 79.39655494689941,
+          "gap": 44.42597770690918,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "67,988",
+          "top": 16.413793563842773,
+          "bottom": 30.89655303955078,
+          "gap": 92.92597961425781,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "11:50",
+        "13:10",
+        "14:25"
+      ],
+      "marker": {
+        "top": 123.8225326538086,
+        "bottom": 143.8225326538086
+      },
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "interval": "15m",
+      "ticks": [
+        {
+          "text": "66,902",
+          "top": 210.41380310058594,
+          "bottom": 224.89656257629395,
+          "gap": 45.159454345703125,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "67,312",
+          "top": 170.66815185546875,
+          "bottom": 185.15091133117676,
+          "gap": 5.4138031005859375,
+          "originalY": 169.5,
+          "labelY": 182.2543487548828,
+          "leader": true
+        },
+        {
+          "text": "67,723",
+          "top": 113.41378784179688,
+          "bottom": 127.89654731750488,
+          "gap": 17.35780143737793,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "68,133",
+          "top": 64.9137954711914,
+          "bottom": 79.39655494689941,
+          "gap": 65.8577938079834,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "68,543",
+          "top": 16.413793563842773,
+          "bottom": 30.89655303955078,
+          "gap": 114.35779571533203,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "06:30",
+        "10:30",
+        "14:15"
+      ],
+      "marker": {
+        "top": 145.2543487548828,
+        "bottom": 165.2543487548828
+      },
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "interval": "1h",
+      "ticks": [
+        {
+          "text": "65,546",
+          "top": 210.41380310058594,
+          "bottom": 224.89656257629395,
+          "gap": 98.94729614257812,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "66,331",
+          "top": 161.91380310058594,
+          "bottom": 176.39656257629395,
+          "gap": 50.447296142578125,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "67,116",
+          "top": 116.88030242919922,
+          "bottom": 131.36306190490723,
+          "gap": 5.413795471191406,
+          "originalY": 121,
+          "labelY": 128.4665069580078,
+          "leader": true
+        },
+        {
+          "text": "67,902",
+          "top": 64.9137954711914,
+          "bottom": 79.39655494689941,
+          "gap": 12.069952011108398,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "68,687",
+          "top": 16.413793563842773,
+          "bottom": 30.89655303955078,
+          "gap": 60.56995391845703,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "07:0017 May",
+        "23:0017 May",
+        "14:0018 May"
+      ],
+      "marker": {
+        "top": 91.46650695800781,
+        "bottom": 111.46650695800781
+      },
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "interval": "4h",
+      "ticks": [
+        {
+          "text": "60,205",
+          "top": 210.41380310058594,
+          "bottom": 224.89656257629395,
+          "gap": 140.62230682373047,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "62,421",
+          "top": 161.91380310058594,
+          "bottom": 176.39656257629395,
+          "gap": 92.12230682373047,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "64,637",
+          "top": 113.41378784179688,
+          "bottom": 127.89654731750488,
+          "gap": 43.622291564941406,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "66,852",
+          "top": 75.20529174804688,
+          "bottom": 89.68805122375488,
+          "gap": 5.413795471191406,
+          "originalY": 72.5,
+          "labelY": 86.79149627685547,
+          "leader": true
+        },
+        {
+          "text": "69,068",
+          "top": 16.413793563842773,
+          "bottom": 30.89655303955078,
+          "gap": 18.894943237304688,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "08:0013 May",
+        "00:0016 May",
+        "12:0018 May"
+      ],
+      "marker": {
+        "top": 49.79149627685547,
+        "bottom": 69.79149627685547
+      },
+      "overflow": false
+    },
+    {
+      "width": 533,
+      "interval": "5m",
+      "ticks": [
+        {
+          "text": "67,007",
+          "top": 210.29295349121094,
+          "bottom": 224.92676448822021,
+          "gap": 66.47042083740234,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "67,252",
+          "top": 161.79295349121094,
+          "bottom": 176.42676448822021,
+          "gap": 17.970420837402344,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "67,498",
+          "top": 103.11548614501953,
+          "bottom": 117.74929714202881,
+          "gap": 6.073235511779785,
+          "originalY": 121,
+          "labelY": 114.8225326538086,
+          "leader": true
+        },
+        {
+          "text": "67,743",
+          "top": 64.7929458618164,
+          "bottom": 79.42675685882568,
+          "gap": 44.39577579498291,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "67,988",
+          "top": 16.292951583862305,
+          "bottom": 30.926762580871582,
+          "gap": 92.89577007293701,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "11:50",
+        "13:10",
+        "14:25"
+      ],
+      "marker": {
+        "top": 123.8225326538086,
+        "bottom": 143.8225326538086
+      },
+      "overflow": false
+    },
+    {
+      "width": 533,
+      "interval": "15m",
+      "ticks": [
+        {
+          "text": "66,902",
+          "top": 210.29295349121094,
+          "bottom": 224.92676448822021,
+          "gap": 45.038604736328125,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "67,312",
+          "top": 170.54730224609375,
+          "bottom": 185.18111324310303,
+          "gap": 5.2929534912109375,
+          "originalY": 169.5,
+          "labelY": 182.2543487548828,
+          "leader": true
+        },
+        {
+          "text": "67,723",
+          "top": 113.2929458618164,
+          "bottom": 127.92675685882568,
+          "gap": 17.32759189605713,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "68,133",
+          "top": 64.7929458618164,
+          "bottom": 79.42675685882568,
+          "gap": 65.82759189605713,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "68,543",
+          "top": 16.292951583862305,
+          "bottom": 30.926762580871582,
+          "gap": 114.32758617401123,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "06:30",
+        "10:30",
+        "14:15"
+      ],
+      "marker": {
+        "top": 145.2543487548828,
+        "bottom": 165.2543487548828
+      },
+      "overflow": false
+    },
+    {
+      "width": 533,
+      "interval": "1h",
+      "ticks": [
+        {
+          "text": "65,546",
+          "top": 210.29295349121094,
+          "bottom": 224.92676448822021,
+          "gap": 98.82644653320312,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "66,331",
+          "top": 161.79295349121094,
+          "bottom": 176.42676448822021,
+          "gap": 50.326446533203125,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "67,116",
+          "top": 116.75946044921875,
+          "bottom": 131.39327144622803,
+          "gap": 5.2929534912109375,
+          "originalY": 121,
+          "labelY": 128.4665069580078,
+          "leader": true
+        },
+        {
+          "text": "67,902",
+          "top": 64.7929458618164,
+          "bottom": 79.42675685882568,
+          "gap": 12.039750099182129,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "68,687",
+          "top": 16.292951583862305,
+          "bottom": 30.926762580871582,
+          "gap": 60.53974437713623,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "07:0017 May",
+        "23:0017 May",
+        "14:0018 May"
+      ],
+      "marker": {
+        "top": 91.46650695800781,
+        "bottom": 111.46650695800781
+      },
+      "overflow": false
+    },
+    {
+      "width": 533,
+      "interval": "4h",
+      "ticks": [
+        {
+          "text": "60,205",
+          "top": 210.29295349121094,
+          "bottom": 224.92676448822021,
+          "gap": 140.50145721435547,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "62,421",
+          "top": 161.79295349121094,
+          "bottom": 176.42676448822021,
+          "gap": 92.00145721435547,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "64,637",
+          "top": 113.2929458618164,
+          "bottom": 127.92675685882568,
+          "gap": 43.50144958496094,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "66,852",
+          "top": 75.08444213867188,
+          "bottom": 89.71825313568115,
+          "gap": 5.292945861816406,
+          "originalY": 72.5,
+          "labelY": 86.79149627685547,
+          "leader": true
+        },
+        {
+          "text": "69,068",
+          "top": 16.292951583862305,
+          "bottom": 30.926762580871582,
+          "gap": 18.864733695983887,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "08:0013 May",
+        "00:0016 May",
+        "12:0018 May"
+      ],
+      "marker": {
+        "top": 49.79149627685547,
+        "bottom": 69.79149627685547
+      },
+      "overflow": false
+    },
+    {
+      "width": 534,
+      "interval": "5m",
+      "ticks": [
+        {
+          "text": "66,959",
+          "top": 210.2922821044922,
+          "bottom": 224.9269313812256,
+          "gap": 44.511016845703125,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "67,328",
+          "top": 171.07354736328125,
+          "bottom": 185.70819664001465,
+          "gap": 5.2922821044921875,
+          "originalY": 169.5,
+          "labelY": 182.78126525878906,
+          "leader": true
+        },
+        {
+          "text": "67,698",
+          "top": 113.29228973388672,
+          "bottom": 127.92693901062012,
+          "gap": 17.854326248168945,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "68,067",
+          "top": 64.79228210449219,
+          "bottom": 79.42693138122559,
+          "gap": 66.35433387756348,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "68,436",
+          "top": 16.292282104492188,
+          "bottom": 30.926931381225586,
+          "gap": 114.85433387756348,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "09:10",
+        "10:15",
+        "11:15",
+        "12:20",
+        "13:20",
+        "14:25"
+      ],
+      "marker": {
+        "top": 145.78126525878906,
+        "bottom": 165.78126525878906
+      },
+      "overflow": false
+    },
+    {
+      "width": 534,
+      "interval": "15m",
+      "ticks": [
+        {
+          "text": "65,888",
+          "top": 210.2922821044922,
+          "bottom": 224.9269313812256,
+          "gap": 90.71551513671875,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "66,579",
+          "top": 161.7922821044922,
+          "bottom": 176.4269313812256,
+          "gap": 42.21551513671875,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "67,270",
+          "top": 124.86904907226562,
+          "bottom": 139.50369834899902,
+          "gap": 5.2922821044921875,
+          "originalY": 121,
+          "labelY": 136.57676696777344,
+          "leader": true
+        },
+        {
+          "text": "67,961",
+          "top": 64.79228210449219,
+          "bottom": 79.42693138122559,
+          "gap": 20.14983558654785,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "68,652",
+          "top": 16.292282104492188,
+          "bottom": 30.926931381225586,
+          "gap": 68.64983558654785,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "22:3017 May",
+        "01:4518 May",
+        "04:4518 May",
+        "08:0018 May",
+        "11:0018 May",
+        "14:1518 May"
+      ],
+      "marker": {
+        "top": 99.57676696777344,
+        "bottom": 119.57676696777344
+      },
+      "overflow": false
+    },
+    {
+      "width": 534,
+      "interval": "1h",
+      "ticks": [
+        {
+          "text": "62,587",
+          "top": 210.2922821044922,
+          "bottom": 224.9269313812256,
+          "gap": 128.78618240356445,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "64,191",
+          "top": 161.7922821044922,
+          "bottom": 176.4269313812256,
+          "gap": 80.28618240356445,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "65,796",
+          "top": 113.29228973388672,
+          "bottom": 127.92693901062012,
+          "gap": 31.786190032958984,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "67,400",
+          "top": 86.79838562011719,
+          "bottom": 101.43303489685059,
+          "gap": 5.292285919189453,
+          "originalY": 72.5,
+          "labelY": 98.506103515625,
+          "leader": true
+        },
+        {
+          "text": "69,004",
+          "top": 16.292282104492188,
+          "bottom": 30.926931381225586,
+          "gap": 30.57916831970215,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "23:0015 May",
+        "12:0016 May",
+        "00:0017 May",
+        "13:0017 May",
+        "01:0018 May",
+        "14:0018 May"
+      ],
+      "marker": {
+        "top": 61.506099700927734,
+        "bottom": 81.50609970092773
+      },
+      "overflow": false
+    },
+    {
+      "width": 534,
+      "interval": "4h",
+      "ticks": [
+        {
+          "text": "59,794",
+          "top": 210.2922821044922,
+          "bottom": 224.9269313812256,
+          "gap": 141.3318748474121,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "62,124",
+          "top": 161.7922821044922,
+          "bottom": 176.4269313812256,
+          "gap": 92.83187484741211,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "64,453",
+          "top": 113.29228973388672,
+          "bottom": 127.92693901062012,
+          "gap": 44.33188247680664,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "66,783",
+          "top": 74.25270080566406,
+          "bottom": 88.88735008239746,
+          "gap": 5.292293548583984,
+          "originalY": 72.5,
+          "labelY": 85.96041107177734,
+          "leader": true
+        },
+        {
+          "text": "69,112",
+          "top": 16.292282104492188,
+          "bottom": 30.926931381225586,
+          "gap": 18.033475875854492,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "12:0011 May",
+        "20:0012 May",
+        "08:0014 May",
+        "16:0015 May",
+        "04:0017 May",
+        "12:0018 May"
+      ],
+      "marker": {
+        "top": 48.96040725708008,
+        "bottom": 68.96040725708008
+      },
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "interval": "5m",
+      "ticks": [
+        {
+          "text": "67,007",
+          "top": 210,
+          "bottom": 225,
+          "gap": 66.1774673461914,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "67,252",
+          "top": 161.5,
+          "bottom": 176.5,
+          "gap": 17.677467346191406,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "67,498",
+          "top": 102.8225326538086,
+          "bottom": 117.8225326538086,
+          "gap": 6,
+          "originalY": 121,
+          "labelY": 114.8225326538086,
+          "leader": true
+        },
+        {
+          "text": "67,743",
+          "top": 64.5,
+          "bottom": 79.5,
+          "gap": 44.322532653808594,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "67,988",
+          "top": 16,
+          "bottom": 31,
+          "gap": 92.8225326538086,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "11:50",
+        "13:10",
+        "14:25"
+      ],
+      "marker": {
+        "top": 123.8225326538086,
+        "bottom": 143.8225326538086
+      },
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "interval": "15m",
+      "ticks": [
+        {
+          "text": "66,902",
+          "top": 210,
+          "bottom": 225,
+          "gap": 44.74565124511719,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "67,312",
+          "top": 170.2543487548828,
+          "bottom": 185.2543487548828,
+          "gap": 5,
+          "originalY": 169.5,
+          "labelY": 182.2543487548828,
+          "leader": true
+        },
+        {
+          "text": "67,723",
+          "top": 113,
+          "bottom": 128,
+          "gap": 17.254348754882812,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "68,133",
+          "top": 64.5,
+          "bottom": 79.5,
+          "gap": 65.75434875488281,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "68,543",
+          "top": 16,
+          "bottom": 31,
+          "gap": 114.25434875488281,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "06:30",
+        "10:30",
+        "14:15"
+      ],
+      "marker": {
+        "top": 145.2543487548828,
+        "bottom": 165.2543487548828
+      },
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "interval": "1h",
+      "ticks": [
+        {
+          "text": "65,546",
+          "top": 210,
+          "bottom": 225,
+          "gap": 98.53349304199219,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "66,331",
+          "top": 161.5,
+          "bottom": 176.5,
+          "gap": 50.03349304199219,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "67,116",
+          "top": 116.46650695800781,
+          "bottom": 131.4665069580078,
+          "gap": 5,
+          "originalY": 121,
+          "labelY": 128.4665069580078,
+          "leader": true
+        },
+        {
+          "text": "67,902",
+          "top": 64.5,
+          "bottom": 79.5,
+          "gap": 11.966506958007812,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "68,687",
+          "top": 16,
+          "bottom": 31,
+          "gap": 60.46650695800781,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "07:0017 May",
+        "23:0017 May",
+        "14:0018 May"
+      ],
+      "marker": {
+        "top": 91.46650695800781,
+        "bottom": 111.46650695800781
+      },
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "interval": "4h",
+      "ticks": [
+        {
+          "text": "60,205",
+          "top": 210,
+          "bottom": 225,
+          "gap": 140.20850372314453,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "62,421",
+          "top": 161.5,
+          "bottom": 176.5,
+          "gap": 91.70850372314453,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "64,637",
+          "top": 113,
+          "bottom": 128,
+          "gap": 43.20850372314453,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "66,852",
+          "top": 74.79149627685547,
+          "bottom": 89.79149627685547,
+          "gap": 5,
+          "originalY": 72.5,
+          "labelY": 86.79149627685547,
+          "leader": true
+        },
+        {
+          "text": "69,068",
+          "top": 16,
+          "bottom": 31,
+          "gap": 18.79149627685547,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "08:0013 May",
+        "00:0016 May",
+        "12:0018 May"
+      ],
+      "marker": {
+        "top": 49.79149627685547,
+        "bottom": 69.79149627685547
+      },
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "interval": "5m",
+      "ticks": [
+        {
+          "text": "67,007",
+          "top": 210,
+          "bottom": 225,
+          "gap": 66.1774673461914,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "67,252",
+          "top": 161.5,
+          "bottom": 176.5,
+          "gap": 17.677467346191406,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "67,498",
+          "top": 102.8225326538086,
+          "bottom": 117.8225326538086,
+          "gap": 6,
+          "originalY": 121,
+          "labelY": 114.8225326538086,
+          "leader": true
+        },
+        {
+          "text": "67,743",
+          "top": 64.5,
+          "bottom": 79.5,
+          "gap": 44.322532653808594,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "67,988",
+          "top": 16,
+          "bottom": 31,
+          "gap": 92.8225326538086,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "11:50",
+        "13:10",
+        "14:25"
+      ],
+      "marker": {
+        "top": 123.8225326538086,
+        "bottom": 143.8225326538086
+      },
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "interval": "15m",
+      "ticks": [
+        {
+          "text": "66,902",
+          "top": 210,
+          "bottom": 225,
+          "gap": 44.74565124511719,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "67,312",
+          "top": 170.2543487548828,
+          "bottom": 185.2543487548828,
+          "gap": 5,
+          "originalY": 169.5,
+          "labelY": 182.2543487548828,
+          "leader": true
+        },
+        {
+          "text": "67,723",
+          "top": 113,
+          "bottom": 128,
+          "gap": 17.254348754882812,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "68,133",
+          "top": 64.5,
+          "bottom": 79.5,
+          "gap": 65.75434875488281,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "68,543",
+          "top": 16,
+          "bottom": 31,
+          "gap": 114.25434875488281,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "06:30",
+        "10:30",
+        "14:15"
+      ],
+      "marker": {
+        "top": 145.2543487548828,
+        "bottom": 165.2543487548828
+      },
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "interval": "1h",
+      "ticks": [
+        {
+          "text": "65,546",
+          "top": 210,
+          "bottom": 225,
+          "gap": 98.53349304199219,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "66,331",
+          "top": 161.5,
+          "bottom": 176.5,
+          "gap": 50.03349304199219,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "67,116",
+          "top": 116.46650695800781,
+          "bottom": 131.4665069580078,
+          "gap": 5,
+          "originalY": 121,
+          "labelY": 128.4665069580078,
+          "leader": true
+        },
+        {
+          "text": "67,902",
+          "top": 64.5,
+          "bottom": 79.5,
+          "gap": 11.966506958007812,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "68,687",
+          "top": 16,
+          "bottom": 31,
+          "gap": 60.46650695800781,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "07:0017 May",
+        "23:0017 May",
+        "14:0018 May"
+      ],
+      "marker": {
+        "top": 91.46650695800781,
+        "bottom": 111.46650695800781
+      },
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "interval": "4h",
+      "ticks": [
+        {
+          "text": "60,205",
+          "top": 210,
+          "bottom": 225,
+          "gap": 140.20850372314453,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "62,421",
+          "top": 161.5,
+          "bottom": 176.5,
+          "gap": 91.70850372314453,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "64,637",
+          "top": 113,
+          "bottom": 128,
+          "gap": 43.20850372314453,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "66,852",
+          "top": 74.79149627685547,
+          "bottom": 89.79149627685547,
+          "gap": 5,
+          "originalY": 72.5,
+          "labelY": 86.79149627685547,
+          "leader": true
+        },
+        {
+          "text": "69,068",
+          "top": 16,
+          "bottom": 31,
+          "gap": 18.79149627685547,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "08:0013 May",
+        "00:0016 May",
+        "12:0018 May"
+      ],
+      "marker": {
+        "top": 49.79149627685547,
+        "bottom": 69.79149627685547
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "interval": "5m",
+      "ticks": [
+        {
+          "text": "66,959",
+          "top": 210,
+          "bottom": 225,
+          "gap": 44.21873474121094,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "67,328",
+          "top": 170.78126525878906,
+          "bottom": 185.78126525878906,
+          "gap": 5,
+          "originalY": 169.5,
+          "labelY": 182.78126525878906,
+          "leader": true
+        },
+        {
+          "text": "67,698",
+          "top": 113,
+          "bottom": 128,
+          "gap": 17.781265258789062,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "68,067",
+          "top": 64.5,
+          "bottom": 79.5,
+          "gap": 66.28126525878906,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "68,436",
+          "top": 16,
+          "bottom": 31,
+          "gap": 114.78126525878906,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "09:10",
+        "10:15",
+        "11:15",
+        "12:20",
+        "13:20",
+        "14:25"
+      ],
+      "marker": {
+        "top": 145.78126525878906,
+        "bottom": 165.78126525878906
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "interval": "15m",
+      "ticks": [
+        {
+          "text": "65,888",
+          "top": 210,
+          "bottom": 225,
+          "gap": 90.42323303222656,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "66,579",
+          "top": 161.5,
+          "bottom": 176.5,
+          "gap": 41.92323303222656,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "67,270",
+          "top": 124.57676696777344,
+          "bottom": 139.57676696777344,
+          "gap": 5,
+          "originalY": 121,
+          "labelY": 136.57676696777344,
+          "leader": true
+        },
+        {
+          "text": "67,961",
+          "top": 64.5,
+          "bottom": 79.5,
+          "gap": 20.076766967773438,
+          "originalY": 72.5,
+          "labelY": 76.5,
+          "leader": false
+        },
+        {
+          "text": "68,652",
+          "top": 16,
+          "bottom": 31,
+          "gap": 68.57676696777344,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "22:3017 May",
+        "01:4518 May",
+        "04:4518 May",
+        "08:0018 May",
+        "11:0018 May",
+        "14:1518 May"
+      ],
+      "marker": {
+        "top": 99.57676696777344,
+        "bottom": 119.57676696777344
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "interval": "1h",
+      "ticks": [
+        {
+          "text": "62,587",
+          "top": 210,
+          "bottom": 225,
+          "gap": 128.49390029907227,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "64,191",
+          "top": 161.5,
+          "bottom": 176.5,
+          "gap": 79.99390029907227,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "65,796",
+          "top": 113,
+          "bottom": 128,
+          "gap": 31.493900299072266,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "67,400",
+          "top": 86.506103515625,
+          "bottom": 101.506103515625,
+          "gap": 5.000003814697266,
+          "originalY": 72.5,
+          "labelY": 98.506103515625,
+          "leader": true
+        },
+        {
+          "text": "69,004",
+          "top": 16,
+          "bottom": 31,
+          "gap": 30.506099700927734,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "23:0015 May",
+        "12:0016 May",
+        "00:0017 May",
+        "13:0017 May",
+        "01:0018 May",
+        "14:0018 May"
+      ],
+      "marker": {
+        "top": 61.506099700927734,
+        "bottom": 81.50609970092773
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "interval": "4h",
+      "ticks": [
+        {
+          "text": "59,794",
+          "top": 210,
+          "bottom": 225,
+          "gap": 141.03959274291992,
+          "originalY": 218,
+          "labelY": 222,
+          "leader": false
+        },
+        {
+          "text": "62,124",
+          "top": 161.5,
+          "bottom": 176.5,
+          "gap": 92.53959274291992,
+          "originalY": 169.5,
+          "labelY": 173.5,
+          "leader": false
+        },
+        {
+          "text": "64,453",
+          "top": 113,
+          "bottom": 128,
+          "gap": 44.03959274291992,
+          "originalY": 121,
+          "labelY": 125,
+          "leader": false
+        },
+        {
+          "text": "66,783",
+          "top": 73.96041107177734,
+          "bottom": 88.96041107177734,
+          "gap": 5.000003814697266,
+          "originalY": 72.5,
+          "labelY": 85.96041107177734,
+          "leader": true
+        },
+        {
+          "text": "69,112",
+          "top": 16,
+          "bottom": 31,
+          "gap": 17.960407257080078,
+          "originalY": 24,
+          "labelY": 28,
+          "leader": false
+        }
+      ],
+      "timeLabels": [
+        "12:0011 May",
+        "20:0012 May",
+        "08:0014 May",
+        "16:0015 May",
+        "04:0017 May",
+        "12:0018 May"
+      ],
+      "marker": {
+        "top": 48.96040725708008,
+        "bottom": 68.96040725708008
+      },
+      "overflow": false
+    }
+  ],
+  "equity": [],
+  "risk": [
+    {
+      "width": 390,
+      "top": 152.15625,
+      "bottom": 283.15625,
+      "viewportHeight": 844,
+      "scrollY": 2181
+    },
+    {
+      "width": 1440,
+      "top": 152.78125,
+      "bottom": 283.78125,
+      "viewportHeight": 844,
+      "scrollY": 666
+    }
+  ],
+  "audits": [
+    {
+      "name": "risk result mobile",
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Chromium emulation; no physical device, screen reader, Firefox, WebKit or native browser zoom.",
+    "Sentiment and market transports use explicit fixtures; no credentials or real orders."
+  ],
+  "result": "FAIL",
+  "failure": "AssertionError [ERR_ASSERTION]: {\"width\":246,\"plotEnd\":189,\"ticks\":[{\"text\":\"$1,024\",\"x\":199.953125,\"right\":242.21875,\"size\":\"12px\"},{\"text\":\"$1,006\",\"x\":199.953125,\"right\":242,\"size\":\"12px\"},{\"text\":\"$987\",\"x\":210.953125,\"right\":242,\"size\":\"12px\"},{\"text\":\"$968\",\"x\":210.953125,\"right\":242,\"size\":\"12px\"}]}\n    at file:///root/.identitymd/work/9b20c1b2-1829-438f-9cbe-bebae0a19a2d/e896d792-cf73-4ded-95cd-20f85c877a0e/test/scratch/workspace/tests/review-browser.mjs:120:14"
+}

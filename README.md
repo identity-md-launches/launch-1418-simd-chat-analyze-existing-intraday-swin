@@ -100,17 +100,17 @@ Each asset's imported dataset, date range, configuration and baseline backtest r
 
 ## Validation actually performed
 
-On 2026-10-12, on the final implementation:
+Fresh checks during the documentation repair on 2026-10-12:
 
-- Production build and TypeScript typecheck passed.
-- **60 numerical/transport/state tests passed**, including shared source-freshness boundaries and unambiguous UTC candle identifiers.
-- **22 browser interaction groups passed**, including risk breaches, midnight submission checks, invalid short targets, worker computations, downloads, filters, persistence and stale feed behavior.
-- **Seven regression groups passed**, covering chart axes at seven widths, price precision, asset-specific research retention, recorded history, typography and unknown-route recovery.
-- **Six review regression groups passed**, covering visible/focused risk results, full equity labels at $1K/$1M/$1B capital, actionable feed empty states, consistent source freshness, dated candle inspection and price-marker collision handling. All six UI reports were reproduced before correction; the seventh finding was six missing documentation files, now restored.
-- **Nine real-network browser checks passed** against Kraken, including 720 closed candles, live BTC→ETH switching and pause/resume, with no console/resource failures.
-- **18 automated accessibility audits** passed with no reported violations. All seven views reflowed at 320, 390, 768 and 1024px; desktop and mobile screenshots were inspected. The product and primary action are visible on the first 390px screen.
+- Production build and TypeScript typecheck passed; all **60 numerical/transport/state tests passed**.
+- **22 browser interaction groups passed**, including risk breaches, midnight submission checks, worker computations, downloads, filters, persistence and held-feed behavior. The suite completed **15 automated accessibility audits** without reported violations.
+- All seven views reflowed without page overflow at 320, 390, 768 and 1024px. Desktop and mobile screenshots were inspected; the product and **Analyze market** action appear on the first 390px screen.
+- **Nine real-network checks passed** against Kraken, including 720 closed candles, BTC→ETH switching and pause/resume, with no recorded console errors or failed requests.
+- Two existing regression suites **did not pass** in the installed Chromium: a time label exceeded its plot-edge tolerance by 0.15px, and an equity label exceeded its right-padding tolerance by about 0.12px. Both remained within their SVGs. The review suite completed three groups and one additional accessibility audit before its failure. Later groups were not reached; this repair does not repeat the previous README's unsupported all-pass claims. Exact measurements and limits are in [validation.md](artifacts/validation.md).
 
-The worker used an exact disposable source copy in `test/scratch/workspace/` to install dependencies and run the npm commands without touching the protected repository dependency path. Its final `dist/` was copied back and byte-compared. The provided browser tool also inspected that root export using a bounded foreground preview harness, exercised analysis/focus return, and reported no console errors. The expected tool-managed preview manifest was absent; no detached preview daemon was used.
+The worker installed the unchanged lockfile in a disposable `test/scratch/workspace/` copy. Its fresh build was byte-identical to all seven delivered `dist/` files, so the accepted source and export were preserved. The provided browser tool separately inspected the root export, exercised analysis and Escape/focus return, and reported no console errors. Tests own bounded foreground previews; no publishing command was run.
+
+The missing-document finding reproduced for all eight reported links. The six required documents/inventory are now ordinary files in `artifacts/`, and an explicit, budgeted `.gitignore` inclusion overrides the machine-local exclusion that hid them. The unavailable historical before-evidence link has been removed. [Documentation checks](artifacts/documentation-check.json) record file/link existence, Git inclusion and unchanged application hashes.
 
 To repeat local browser checks:
 
@@ -122,9 +122,9 @@ npm run check:review
 npm run check:live
 ```
 
-The last command contacts the public network; the other three checks use explicit live transport fixtures where needed. Set `PULSE_CHROMIUM` to an installed Chromium executable instead of downloading one. Scripts own and close their preview servers and browser sessions. Reviewer dispositions are recorded in [.imd-responses.json](.imd-responses.json); measured before/after evidence is in [review-before.json](artifacts/review-before.json) and [review-results.json](artifacts/review-results.json).
+The last command contacts the public network; the other three checks use explicit live transport fixtures where needed. Set `PULSE_CHROMIUM` to an installed Chromium executable instead of downloading one. Scripts own and close their preview servers and browser sessions. Reviewer disposition is in [.imd-responses.json](.imd-responses.json). Fresh machine-readable results: [primary interactions](artifacts/browser-results.json), [regression failure](artifacts/revision-results.json), [review partial run](artifacts/review-results.json), and [real-network walkthrough](artifacts/live-browser-report.json).
 
-The complete six-domain Better Interface coverage, findings/fixes, commands, measured contrast, screenshots and limitations are in [artifacts/validation.md](artifacts/validation.md). These are worker observations, not independent certification. Screen-reader, physical-device, Safari/Firefox and native browser zoom checks were not performed. 200% CSS text enlargement was checked separately. Paid sentiment integrations, real orders, SIMD pinning and the inherited Python service test suite were not exercised in this frontend revision.
+The six-domain Better Interface coverage, documentation fix, commands, measured contrast, screenshots and remaining limitations are in [artifacts/validation.md](artifacts/validation.md). These are worker observations, not independent certification. Screen-reader, physical-device, Safari/Firefox and native browser zoom checks were not performed. 200% CSS text enlargement was checked separately. Paid sentiment integrations, real orders, SIMD pinning and the inherited Python service test suite were not exercised in this documentation revision.
 
 ## Repository map
 

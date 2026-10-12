@@ -1,0 +1,34 @@
+{
+  "startedAt": "2026-10-12T14:03:42.753Z",
+  "checks": [
+    "390 px connection screen exposes the product and Connect market stream action",
+    "Real Kraken WebSocket connection reaches Streaming without credentials or a service",
+    "Browser CORS allows real REST history hydration with at least 30 closed candles",
+    "Pause immediately exposes held signal state",
+    "Resume resubscribes and recovers genuine market updates",
+    "Price-only live workspace clearly withholds signals while sentiment sources are unavailable",
+    "Changing the live market replaces its subscription and renders the selected asset",
+    "Returning to demo closes the stream and restores a deterministic workspace",
+    "Live browser walkthrough has no runtime or console errors"
+  ],
+  "websocketChannels": {
+    "status": 3,
+    "ticker": 4,
+    "ohlc": 4,
+    "heartbeat": 2
+  },
+  "consoleErrors": [],
+  "requestFailures": [],
+  "limitations": [
+    "Public exchange availability and the browser network are external dependencies.",
+    "Message delay estimates include device clock skew; this is not an RTT benchmark.",
+    "No sentiment-provider credentials or real trade execution are exercised."
+  ],
+  "closedHistory": "720 candles ready",
+  "mobileBounds": {
+    "viewport": 390,
+    "content": 390
+  },
+  "result": "passed",
+  "finishedAt": "2026-10-12T14:03:47.015Z"
+}

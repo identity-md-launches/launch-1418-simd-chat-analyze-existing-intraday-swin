@@ -1,0 +1,54 @@
+{
+  "purpose": "Measure the two existing strict-geometry failures without changing source or original tests.",
+  "observations": [
+    {
+      "kind": "time axis",
+      "svgWidth": 416.140625,
+      "plotWidth": 340.140625,
+      "labels": [
+        {
+          "text": "07:0017 May",
+          "x": 0,
+          "right": 43.1875
+        },
+        {
+          "text": "23:0017 May",
+          "x": 148.6015625,
+          "right": 191.7890625
+        },
+        {
+          "text": "14:0018 May",
+          "x": 297.203125,
+          "right": 340.390625
+        }
+      ]
+    },
+    {
+      "kind": "equity axis",
+      "svgWidth": 246,
+      "labels": [
+        {
+          "text": "$1,024",
+          "x": 199.953125,
+          "right": 242.21875
+        },
+        {
+          "text": "$1,006",
+          "x": 199.953125,
+          "right": 242
+        },
+        {
+          "text": "$987",
+          "x": 210.953125,
+          "right": 242
+        },
+        {
+          "text": "$968",
+          "x": 210.953125,
+          "right": 242
+        }
+      ]
+    }
+  ],
+  "allMeasuredLabelsWithinSvg": true
+}

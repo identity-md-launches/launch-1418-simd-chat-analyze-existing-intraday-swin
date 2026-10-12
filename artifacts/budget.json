@@ -1,0 +1,418 @@
+{
+  "limitBytes": 8388608,
+  "totalUncompressedFileBytes": 3597349,
+  "exportBytes": 535895,
+  "fileCount": 102,
+  "reservedPackagingBytes": 1048576,
+  "withinBudgetWithReserve": true,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 595
+    },
+    {
+      "path": ".imd-responses.json",
+      "bytes": 1159
+    },
+    {
+      "path": "DESIGN.md",
+      "bytes": 16478
+    },
+    {
+      "path": "PATH_BUDGET.md",
+      "bytes": 1929
+    },
+    {
+      "path": "README.md",
+      "bytes": 14914
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 3313
+    },
+    {
+      "path": "artifacts/analytics-notes.md",
+      "bytes": 11716
+    },
+    {
+      "path": "artifacts/backtest-desktop.png",
+      "bytes": 332286
+    },
+    {
+      "path": "artifacts/browser-results.json",
+      "bytes": 7497
+    },
+    {
+      "path": "artifacts/budget.json",
+      "bytes": 7760
+    },
+    {
+      "path": "artifacts/chart-1440.png",
+      "bytes": 59702
+    },
+    {
+      "path": "artifacts/chart-390.png",
+      "bytes": 45363
+    },
+    {
+      "path": "artifacts/chart-multiday-mobile.png",
+      "bytes": 47328
+    },
+    {
+      "path": "artifacts/check-results.json",
+      "bytes": 14596
+    },
+    {
+      "path": "artifacts/code-improvements.md",
+      "bytes": 9212
+    },
+    {
+      "path": "artifacts/diagnostic-equity-axis.png",
+      "bytes": 23329
+    },
+    {
+      "path": "artifacts/diagnostic-time-axis.png",
+      "bytes": 23172
+    },
+    {
+      "path": "artifacts/documentation-check.json",
+      "bytes": 15744
+    },
+    {
+      "path": "artifacts/first-screen-mobile.png",
+      "bytes": 67659
+    },
+    {
+      "path": "artifacts/focus-desktop.png",
+      "bytes": 207719
+    },
+    {
+      "path": "artifacts/geometry-diagnostics.json",
+      "bytes": 1111
+    },
+    {
+      "path": "artifacts/live-browser-report.json",
+      "bytes": 1370
+    },
+    {
+      "path": "artifacts/live-notes.md",
+      "bytes": 8668
+    },
+    {
+      "path": "artifacts/overview-desktop.png",
+      "bytes": 311555
+    },
+    {
+      "path": "artifacts/overview-mobile.png",
+      "bytes": 263392
+    },
+    {
+      "path": "artifacts/research-desktop.png",
+      "bytes": 392277
+    },
+    {
+      "path": "artifacts/review-results.json",
+      "bytes": 43029
+    },
+    {
+      "path": "artifacts/revision-results.json",
+      "bytes": 20684
+    },
+    {
+      "path": "artifacts/risk-notes.md",
+      "bytes": 8924
+    },
+    {
+      "path": "artifacts/risk-protection-desktop.png",
+      "bytes": 251928
+    },
+    {
+      "path": "artifacts/risk-result-mobile.png",
+      "bytes": 56721
+    },
+    {
+      "path": "artifacts/root-export-focus.png",
+      "bytes": 141160
+    },
+    {
+      "path": "artifacts/upstream-files.json",
+      "bytes": 1132
+    },
+    {
+      "path": "artifacts/validation.md",
+      "bytes": 15528
+    },
+    {
+      "path": "dist/assets/index-R7VqOLMq.js",
+      "bytes": 380201
+    },
+    {
+      "path": "dist/assets/index-Zm4U1ZT8.css",
+      "bytes": 41028
+    },
+    {
+      "path": "dist/assets/inter-latin-wght-normal-Dx4kXJAl.woff2",
+      "bytes": 48256
+    },
+    {
+      "path": "dist/assets/research.worker-D-yfeKnt.js",
+      "bytes": 10421
+    },
+    {
+      "path": "dist/favicon.svg",
+      "bytes": 251
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 1105
+    },
+    {
+      "path": "dist/og-image.png",
+      "bytes": 54633
+    },
+    {
+      "path": "index.html",
+      "bytes": 1005
+    },
+    {
+      "path": "licenses/better-interface-and-impeccable.txt",
+      "bytes": 11964
+    },
+    {
+      "path": "licenses/inter-OFL.txt",
+      "bytes": 4380
+    },
+    {
+      "path": "licenses/jev-x-MIT.txt",
+      "bytes": 1070
+    },
+    {
+      "path": "licenses/lucide-ISC.txt",
+      "bytes": 3208
+    },
+    {
+      "path": "licenses/react-MIT.txt",
+      "bytes": 1088
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 81078
+    },
+    {
+      "path": "package.json",
+      "bytes": 1041
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 251
+    },
+    {
+      "path": "public/og-image.png",
+      "bytes": 54633
+    },
+    {
+      "path": "scripts/check_budget.py",
+      "bytes": 2430
+    },
+    {
+      "path": "scripts/generate-social.mjs",
+      "bytes": 2050
+    },
+    {
+      "path": "scripts/preview.mjs",
+      "bytes": 1409
+    },
+    {
+      "path": "service/README.md",
+      "bytes": 8258
+    },
+    {
+      "path": "service/__init__.py",
+      "bytes": 83
+    },
+    {
+      "path": "service/main.py",
+      "bytes": 3234
+    },
+    {
+      "path": "service/onchain.schema.json",
+      "bytes": 948
+    },
+    {
+      "path": "service/providers.py",
+      "bytes": 9784
+    },
+    {
+      "path": "service/requirements.lock.txt",
+      "bytes": 727
+    },
+    {
+      "path": "service/requirements.txt",
+      "bytes": 98
+    },
+    {
+      "path": "service/stats.py",
+      "bytes": 2247
+    },
+    {
+      "path": "service/store.py",
+      "bytes": 3551
+    },
+    {
+      "path": "src/App.tsx",
+      "bytes": 54093
+    },
+    {
+      "path": "src/Chart.tsx",
+      "bytes": 17148
+    },
+    {
+      "path": "src/EquityChart.tsx",
+      "bytes": 2297
+    },
+    {
+      "path": "src/components/AlertCenter.tsx",
+      "bytes": 10855
+    },
+    {
+      "path": "src/components.tsx",
+      "bytes": 10511
+    },
+    {
+      "path": "src/lib/alerts.ts",
+      "bytes": 5846
+    },
+    {
+      "path": "src/lib/analytics.ts",
+      "bytes": 3281
+    },
+    {
+      "path": "src/lib/data.ts",
+      "bytes": 4316
+    },
+    {
+      "path": "src/lib/engine.ts",
+      "bytes": 19359
+    },
+    {
+      "path": "src/lib/live.ts",
+      "bytes": 19470
+    },
+    {
+      "path": "src/lib/research.worker.ts",
+      "bytes": 1368
+    },
+    {
+      "path": "src/lib/risk.ts",
+      "bytes": 11415
+    },
+    {
+      "path": "src/lib/scenarios.ts",
+      "bytes": 8362
+    },
+    {
+      "path": "src/lib/storage.ts",
+      "bytes": 456
+    },
+    {
+      "path": "src/lib/validation.ts",
+      "bytes": 2486
+    },
+    {
+      "path": "src/main.tsx",
+      "bytes": 238
+    },
+    {
+      "path": "src/pages/Backtest.tsx",
+      "bytes": 35817
+    },
+    {
+      "path": "src/pages/Connections.tsx",
+      "bytes": 14874
+    },
+    {
+      "path": "src/pages/Guide.tsx",
+      "bytes": 7116
+    },
+    {
+      "path": "src/pages/Risk.tsx",
+      "bytes": 27258
+    },
+    {
+      "path": "src/pages/Signals.tsx",
+      "bytes": 9673
+    },
+    {
+      "path": "src/styles.css",
+      "bytes": 47268
+    },
+    {
+      "path": "src/types.ts",
+      "bytes": 2434
+    },
+    {
+      "path": "templates/README.md",
+      "bytes": 3314
+    },
+    {
+      "path": "templates/execution.py",
+      "bytes": 5642
+    },
+    {
+      "path": "tests/analytics.test.ts",
+      "bytes": 10504
+    },
+    {
+      "path": "tests/browser.mjs",
+      "bytes": 24619
+    },
+    {
+      "path": "tests/engine.test.ts",
+      "bytes": 7335
+    },
+    {
+      "path": "tests/live-browser.mjs",
+      "bytes": 5438
+    },
+    {
+      "path": "tests/live.test.ts",
+      "bytes": 11538
+    },
+    {
+      "path": "tests/market-fixture.mjs",
+      "bytes": 1624
+    },
+    {
+      "path": "tests/review-browser.mjs",
+      "bytes": 12411
+    },
+    {
+      "path": "tests/review.test.ts",
+      "bytes": 1779
+    },
+    {
+      "path": "tests/revision-browser.mjs",
+      "bytes": 13460
+    },
+    {
+      "path": "tests/risk-alerts.test.ts",
+      "bytes": 6579
+    },
+    {
+      "path": "tests/risk.test.ts",
+      "bytes": 5887
+    },
+    {
+      "path": "tests/test_service.py",
+      "bytes": 11281
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 441
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 174
+    }
+  ]
+}

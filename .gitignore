@@ -19,3 +19,10 @@ test/scratch/
 *.sqlite3-shm
 *.sqlite3-wal
 # The complete static export in dist/ is intentionally included.
+# Required documentation/evidence overrides a machine-local artifacts/ exclusion.
+# Explicit path budget: PATH_BUDGET.md (artifacts/ <= 3 MiB).
+!/artifacts/
+!/artifacts/*.md
+!/artifacts/*.json
+!/artifacts/*.png
+!/.imd-responses.json
