@@ -1,0 +1,10 @@
+import { chromium } from 'playwright';
+import { writeFile, mkdir } from 'node:fs/promises';
+const browser = await chromium.launch({ headless: true, ...(process.env.PULSE_CHROMIUM ? { executablePath: process.env.PULSE_CHROMIUM } : {}), args: ['--no-sandbox'] });
+try {
+  const page = await browser.newPage({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 });
+  await page.setContent(`<html><body style="margin:0;background:#0c1017;color:#ecf0f5;font-family:Arial,sans-serif"><svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="#0c1017"/><g stroke="#293341" stroke-dasharray="3 8"><path d="M580 140H1120M580 240H1120M580 340H1120M580 440H1120M680 100V490M880 100V490M1080 100V490"/></g><rect x="72" y="68" width="56" height="56" rx="15" fill="#72e3bf"/><path d="M82 98h9l6-18 9 33 6-19h8" fill="none" stroke="#102820" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="145" y="110" font-size="47" font-weight="700" fill="#ecf0f5">pulse<tspan fill="#72e3bf">.</tspan></text><text x="72" y="260" font-size="61" font-weight="700" fill="#ecf0f5">Read the market.</text><text x="72" y="334" font-size="61" font-weight="700" fill="#ecf0f5">Plan your next move.</text><text x="74" y="389" font-size="24" fill="#9da9b9">Your personal crypto trading workspace.</text><path d="M690 419 720 384 745 399 781 307 812 331 838 280 862 295 899 217 930 243 960 172 990 196 1026 128 1060 146 1107 95" stroke="#72e3bf" stroke-width="4" fill="none" opacity=".7"/><rect x="72" y="480" width="495" height="56" rx="8" fill="#1a342e"/><text x="96" y="516" fill="#72e3bf" font-size="20">Sentiment  ·  Signals  ·  Charts  ·  Backtesting</text><text x="1106" y="567" text-anchor="end" font-size="18" fill="#9da9b9">Built on Jev-X</text></svg></body></html>`);
+  await mkdir('public', { recursive: true });
+  await page.screenshot({ path: 'public/og-image.png' });
+  console.log('Generated public/og-image.png (1200 × 630).');
+} finally { await browser.close(); }

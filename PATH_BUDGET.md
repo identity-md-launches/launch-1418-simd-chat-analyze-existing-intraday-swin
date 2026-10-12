@@ -1,0 +1,5 @@
+# Submission path budget
+
+The complete submitted bundle has a hard limit of 8,388,608 bytes. This is an explicit budget for the new `.gitignore`: that file may be up to 1 KiB and excludes dependency, cache and scratch directories at every nesting level, generated Python bytecode, local service databases and logs. `.playwright-mcp/` is tool-generated scratch and also has a zero-byte submission budget; retained screenshots go in `artifacts/`. These excluded files have a **zero-byte submission budget**. No runtime dependency assets may rely on an ignored path.
+
+Planned ceilings: `dist/` 1.5 MiB; `src/` and `public/` 1 MiB; `service/`, `templates/`, tests and scripts 0.5 MiB; documentation, licenses and manifests/lockfile 0.5 MiB; `artifacts/` screenshots and validation 3 MiB. This leaves over 1 MiB for submission packaging overhead. The final actual uncompressed inventory is checked by `npm run check:budget`. The required static export is explicitly included, not ignored. There are no submodules, vendored registries or dependency archives.

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pulse on-chain provider response",
+  "type": "object",
+  "required": ["asset", "score", "count", "observedAt", "provider", "methodology"],
+  "properties": {
+    "asset": { "enum": ["BTC", "ETH", "SOL", "BNB"] },
+    "score": { "type": "number", "minimum": 0, "maximum": 100, "description": "Directional sentiment proxy. 0 bearish, 50 neutral, 100 bullish." },
+    "count": { "type": "integer", "minimum": 1, "description": "Number of actual on-chain observations used." },
+    "observedAt": { "type": "integer", "description": "Unix seconds when the provider measured this score. Must be no more than 900 seconds old and never in the future." },
+    "provider": { "type": "string", "maxLength": 100 },
+    "methodology": { "type": "string", "maxLength": 500, "description": "Plain-English calculation, including its observation window and directional assumptions." }
+  }
+}
