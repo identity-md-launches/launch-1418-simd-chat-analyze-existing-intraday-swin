@@ -38,15 +38,19 @@ import {
   SmallLink,
   SourceBars,
   SourceIcon,
+  SourceStatus,
 } from './components';
 import { ASSETS, demoSnapshot } from './lib/data';
 import {
   aggregateSentiment,
   compact,
+  dateTimeLabel,
   DEFAULT_STRATEGY,
   download,
   evaluate,
   money,
+  observationAge,
+  sourceFreshness,
   sizePosition,
   timeLabel,
   validateStrategy,
@@ -371,6 +375,8 @@ export default function App() {
       ))}
     </div>
   );
+  const feedEmpty = mode === 'live' && !serviceEnabled ? 'unconnected'
+    : snapshot?.feed.length ? 'filtered' : 'unavailable';
   const navLinks = NAV.map((item) => (
     <a
       key={item.id}
@@ -820,7 +826,7 @@ export default function App() {
                   className="feed-panel"
                 >
                   {sourceFilter}
-                  <Feed items={feed} asOf={snapshot.asOf} limit={3} />
+                  <Feed items={feed} asOf={snapshot.asOf} limit={3} empty={feedEmpty} />
                 </Panel>
                 <Panel
                   title="Market sentiment"
@@ -877,7 +883,7 @@ export default function App() {
                     key={s.kind}
                     label={`${s.kind} sentiment`}
                     value={s.score ?? '—'}
-                    detail={`${compact(s.count)} ${s.kind === 'Social' ? 'posts' : s.kind === 'News' ? 'headlines' : 'observations'}`}
+                    detail={`${sourceFreshness(s, snapshot.asOf) === 'stale' ? `Stale · ${observationAge(s.updatedAt, snapshot.asOf)} · ` : ''}${compact(s.count)} ${s.kind === 'Social' ? 'posts' : s.kind === 'News' ? 'headlines' : 'observations'}`}
                     icon={<SourceIcon kind={s.kind} />}
                   />
                 ))}
@@ -898,8 +904,8 @@ export default function App() {
                 }
               >
                 {sourceFilter}
-                <Feed items={feed} asOf={snapshot.asOf} />
-                {!feed.length && (
+                <Feed items={feed} asOf={snapshot.asOf} empty={feedEmpty} />
+                {!feed.length && !!snapshot.feed.length && (filter !== 'All sources' || query !== '') && (
                   <div className="empty-action">
                     <button
                       className="button secondary"
@@ -924,9 +930,7 @@ export default function App() {
                     key={s.kind}
                     title={s.kind}
                     action={
-                      <Badge tone={s.status === 'ready' ? 'positive' : 'warning'}>
-                        {s.status === 'ready' ? (mode === 'demo' ? 'Demo' : 'Ready') : 'Unavailable'}
-                      </Badge>
+                      <SourceStatus source={s} asOf={snapshot.asOf} demo={mode === 'demo'} />
                     }
                   >
                     <div className="padded">
@@ -938,7 +942,7 @@ export default function App() {
                         </div>
                         <div>
                           <dt>Last observation</dt>
-                          <dd>{s.updatedAt ? `${timeLabel(s.updatedAt)} UTC` : 'Unavailable'}</dd>
+                          <dd>{s.updatedAt !== null ? `${dateTimeLabel(s.updatedAt)} (${observationAge(s.updatedAt, snapshot.asOf)})` : 'Unavailable'}</dd>
                         </div>
                       </dl>
                     </div>

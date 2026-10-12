@@ -48,6 +48,8 @@ Body line-height is 1.5; prose is 1.6; page headings 1.2; section headings 1.4. 
 
 Chart axes use 12px SVG text. `Chart.tsx` and `EquityChart.tsx` observe their actual container width; the SVG viewbox changes with the container instead of shrinking a fixed desktop layout and its labels. The price chart uses three evenly spaced time ticks below a 480px chart width and six at or above it. The first label is start-anchored and the last is end-anchored to the plot edge, so their actual glyph widths remain inside the plot without fixed-width clamping. The OHLC legend uses the shared two-decimal currency formatter and wraps into additional rows as needed. The candle inspector retains every candle's timestamp and exact values.
 
+The inspector and its live announcement use a full UTC date, year and time. When the plotted range crosses midnight, time ticks use a second date line at the same 12px size. The price axis reserves a complete 16px text box and 5px clearance from the 20px close marker; a colliding tick label moves to the nearest clear side with a short leader to its original price. Grid and close-marker positions stay fixed. The equity axis right-aligns amounts 4px inside the SVG and measures its widest rendered label, reserving that width plus 14px for the gutter. Measurement repeats after font readiness, width and formatted-label changes.
+
 ## Layout
 
 The desktop rail is 220px with a matching main-content offset. The top bar is at least 72px high. Main content uses 32px inline padding and a maximum width of 1800px. Major panels have 20px inner padding; typical group gaps are 18–22px, compared with 6–10px between related labels or icons. A three-column decision strip precedes four market cards and a `2.2fr / 1fr` overview grid. The extension uses spacing tokens `--space-1` through `--space-7`: 4, 8, 12, 16, 20, 24 and 32px. Established 18–22px panel gaps are retained. Form/result pages use `.two-column` and `.settings-grid`; the backtest uses a 260–310px parameter column and flexible results. `.stack` supplies vertically grouped panels.
@@ -80,11 +82,12 @@ Native dialogs occupy the browser top layer. Their shadow is `0 15px 50px #0006,
 
 | Component / pattern | Source and use | States and behavior |
 | --- | --- | --- |
-| `Panel` | `src/components.tsx`; section title, subtitle, optional action and content | Semantic section with h2; responsive heading wrap |
+| `Panel` | `src/components.tsx`; section title, subtitle, optional action and content | Semantic section with h2; responsive heading wrap; optional `headingRef` makes the heading programmatically focusable without adding a tab stop |
 | `Badge`, `Change` | `src/components.tsx`; source/data provenance and value direction | Neutral, positive, negative, warning, accent; direction uses text/arrows as well as color |
 | `AssetIcon`, `SourceIcon` | `src/components.tsx`; market and source identity | Decorative geometry with adjacent visible names |
 | `Gauge`, `SourceBars` | `src/components.tsx`; aggregated and individual sentiment | Nullable scores show unavailable; numeric accessible names and bullish/neutral/bearish text |
-| `Feed` | `src/components.tsx`; timestamped source activity | Safe external links, source labels, matching-filter empty state |
+| `Feed` | `src/components.tsx`; timestamped source activity | Safe external links and source labels. `empty` distinguishes `unconnected`, `unavailable` and `filtered`; missing activity links to Connections. Clear filters appears only when active filters removed underlying items |
+| `SourceStatus` | `src/components.tsx`; Sentiment and Connections source badges | Shared `sourceFreshness` with aggregation: Demo/Ready only for available fresh scores; Stale or Unavailable otherwise. Stale score context and original UTC observation timestamp/age stay visible in the surrounding views |
 | `Metric`, `EmptyState` | `src/components.tsx`; compact results or an actionable absence | Text-first values, informative empty-state copy |
 | `Modal` | `src/components.tsx`; analysis, search, paper trade, mobile navigation | Native `dialog.showModal()` supplies focus containment/inert background; Escape closes, cleanup restores the trigger; outside-pointer dismissal is bounded to the backdrop |
 | Buttons | `src/styles.css`; `.button.primary`, `.button.secondary`, `.icon-button` | Verb labels, hover treatment for hover-capable devices, disabled/loading states, named icon-only controls, 2px focus ring with 4px offset |
@@ -93,9 +96,9 @@ Native dialogs occupy the browser top layer. Their shadow is `0 15px 50px #0006,
 | `Backtest` | `src/pages/Backtest.tsx`; strategy parameters, datasets, results and ledger | App-level session state per asset preserves research across navigation; loading changed signal rules invalidates results while retaining dataset, range, capital and costs; explicit imports/history loads replace data; state ends on reload. Short-lived Web Workers calculate baseline, scenarios and calibration. Parameter changes cancel active work and invalidate obsolete results. Scenario/calibration results are view-local and exported as JSON |
 | Decision strip | `src/App.tsx`, `.decision-strip` | Entry/exit/wait with reason, adaptive volatility and Off/Armed/Tripped paper protection; meaningful text accompanies color |
 | `AlertCenter` | `src/components/AlertCenter.tsx` | Opt-in transition monitoring; bounded log, explicit test alerts, cooldown, acknowledgement and empty state; no price-tick announcement flood |
-| Protection controls | `src/pages/Risk.tsx` | Fixed/ATR/trailing profile, manual equity, latched limits; consequences and confirmation beside baseline reset |
+| Protection controls | `src/pages/Risk.tsx` | Fixed/ATR/trailing profile, manual equity, latched limits; consequences and confirmation beside baseline reset. Successful calculation focuses Position estimate and reveals an off-screen panel using an instant scroll and 90px section scroll margin; input editing never triggers this result navigation |
 | Stream controls | `src/pages/Connections.tsx` | Connect/pause/resume/reconnect; readable Streaming/Stale/Paused/Error status, history readiness and delay estimate |
-| `EquityChart` | `src/EquityChart.tsx`; backtest equity | Container-sized axes, textual start/end equity, adjacent metrics and detailed trade ledger |
+| `EquityChart` | `src/EquityChart.tsx`; backtest equity | Container-sized axes with measured currency gutter and right-aligned full amounts, textual start/end equity, adjacent metrics and detailed trade ledger |
 | Navigation shell | `src/App.tsx` | Real hash anchors with `aria-current`; route title focus; first-focusable skip link; mobile menu dialog |
 | Tables | `.table-scroll`, `table` in `src/styles.css` | Native headers and numeric cells; internal overflow; empty ledger guidance and exports |
 

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
-import { aggregateCandles, compact, indicators, money, timeLabel } from './lib/engine';
+import { aggregateCandles, compact, dateLabel, dateTimeLabel, indicators, money, timeLabel } from './lib/engine';
 import type { Candle } from './types';
 
 export function Sparkline({ values, positive = true }: { values: number[]; positive?: boolean }) {
@@ -99,6 +99,16 @@ export default function Chart({ candles, asset }: { candles: Candle[]; asset: st
   }
   const labels = ['5m', '15m', '1h', '4h'],
     tickCount = width < 480 ? 3 : 6;
+  const crossesMidnight = Math.floor(bars[0].time / 86400) !== Math.floor(bars.at(-1)!.time / 86400);
+  const closeY = y(bars.at(-1)!.close);
+  // At the existing 12px size, reserve the full 16px text box and a 5px marker gap.
+  // Only labels move: grid lines and the last-close marker retain their true price positions.
+  const tickLabelY = (tickY: number) => {
+    const baseline = tickY + 4;
+    if (baseline - 12 >= closeY + 15 || baseline + 4 <= closeY - 15) return baseline;
+    const above = closeY - 19, below = closeY + 27;
+    return Math.abs(above - baseline) <= Math.abs(below - baseline) ? above : below;
+  };
   return (
     <div ref={container} className={`technical-chart ${expanded ? 'expanded-chart' : ''}`}>
       <div className="chart-toolbar">
@@ -186,8 +196,9 @@ export default function Chart({ candles, asset }: { candles: Candle[]; asset: st
       >
         {[0, 1, 2, 3, 4].map((i) => {
           const val = low + ((high - low) * i) / 4;
+          const labelY = tickLabelY(y(val));
           return (
-            <g key={i}>
+            <g key={i} className="price-tick">
               <line
                 x1="0"
                 y1={y(val)}
@@ -196,7 +207,10 @@ export default function Chart({ candles, asset }: { candles: Candle[]; asset: st
                 stroke="var(--chart-grid)"
                 strokeDasharray="3 5"
               />
-              <text x={plotWidth + 10} y={y(val) + 4} fill="var(--muted)">
+              {labelY !== y(val) + 4 && (
+                <polyline points={`${plotWidth - 3},${y(val)} ${plotWidth - 3},${labelY - 4} ${plotWidth + 7},${labelY - 4}`} fill="none" stroke="var(--muted)" strokeWidth="1" />
+              )}
+              <text x={plotWidth + 10} y={labelY} fill="var(--muted)">
                 {val.toLocaleString('en-US', { maximumFractionDigits: asset === 'BTC' ? 0 : 1 })}
               </text>
             </g>
@@ -214,11 +228,13 @@ export default function Chart({ candles, asset }: { candles: Candle[]; asset: st
             />
             <text
               x={(i * plotWidth) / (tickCount - 1)}
-              y={height - 12}
+              className="time-tick"
+              y={height - (crossesMidnight ? 27 : 12)}
               textAnchor={i === 0 ? 'start' : i === tickCount - 1 ? 'end' : 'middle'}
               fill="var(--muted)"
             >
               {timeLabel(bars[Math.round((i * (bars.length - 1)) / (tickCount - 1))].time)}
+              {crossesMidnight && <tspan x={(i * plotWidth) / (tickCount - 1)} dy="15">{dateLabel(bars[Math.round((i * (bars.length - 1)) / (tickCount - 1))].time)}</tspan>}
             </text>
           </g>
         ))}
@@ -397,7 +413,7 @@ export default function Chart({ candles, asset }: { candles: Candle[]; asset: st
           >
             <ChevronLeft size={15} />
           </button>
-          <span>{timeLabel(candle.time)} UTC</span>
+          <span>{dateTimeLabel(candle.time)}</span>
           <button
             className="icon-button"
             aria-label="Inspect next candle"
@@ -409,7 +425,7 @@ export default function Chart({ candles, asset }: { candles: Candle[]; asset: st
         </div>
       </div>
       <div className="sr-only" aria-live="polite">
-        Selected candle {timeLabel(candle.time)} UTC. Open {money(candle.open)}, high {money(candle.high)},
+        Selected candle {dateTimeLabel(candle.time)}. Open {money(candle.open)}, high {money(candle.high)},
         low {money(candle.low)}, close {money(candle.close)}. Volume {compact(candle.volume)}. VWAP{' '}
         {money(technical.vwap[selected])}. Adaptive EMA {money(technical.adaptive.ema[selected])}.
         {technical.adaptive.upper[selected] !== null &&

@@ -1,4 +1,4 @@
-import { useEffect, useState, type FormEvent } from 'react';
+import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { ArrowRight, Calculator, Check, ShieldCheck, WandSparkles } from 'lucide-react';
 import { Badge, Metric, Panel } from '../components';
 import { money } from '../lib/engine';
@@ -73,6 +73,18 @@ export default function Risk({
     [trail, setTrail] = useState<{ best: number; stop: number; tripped: boolean } | null>(null),
     [trailNote, setTrailNote] = useState('');
   const [, tickProtection] = useState(0);
+  const resultHeading = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    if (!result || !resultHeading.current) return;
+    const heading = resultHeading.current;
+    heading.focus({ preventScroll: true });
+    const panel = heading.closest('section');
+    if (!panel) return;
+    const bounds = panel.getBoundingClientRect();
+    const topbarBottom = document.querySelector('.topbar')?.getBoundingClientRect().bottom ?? 0;
+    if (bounds.top < Math.max(0, topbarBottom) || bounds.bottom > window.innerHeight)
+      panel.scrollIntoView({ block: 'start', behavior: 'instant' });
+  }, [result]);
   useEffect(() => {
     const timer = window.setInterval(() => tickProtection((value) => value + 1), 30000);
     return () => window.clearInterval(timer);
@@ -587,7 +599,7 @@ export default function Risk({
             </p>
           </div>
         </Panel>
-        <Panel title="Position estimate" action={<Badge>{snapshot.asset}/USD</Badge>}>
+        <Panel title="Position estimate" headingRef={resultHeading} className="position-estimate" action={<Badge>{snapshot.asset}/USD</Badge>}>
           {result ? (
             <div className="risk-results" role="status">
               <div className="position-total">

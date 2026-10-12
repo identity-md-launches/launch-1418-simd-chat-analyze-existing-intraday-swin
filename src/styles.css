@@ -666,6 +666,7 @@ input[type=checkbox] { width: 18px; height: 18px; accent-color: var(--accent); m
 }
 
 .risk-workspace { min-width: 0; }
+.position-estimate { scroll-margin-block-start: 90px; }
 .warning-callout { border-color: var(--warning); color: var(--warning); margin-block-start: 12px; }
 .compact-form details > .form-stack { padding: 12px 0 0; gap: 16px; }
 .field-hint a { text-decoration: underline; color: var(--text); }

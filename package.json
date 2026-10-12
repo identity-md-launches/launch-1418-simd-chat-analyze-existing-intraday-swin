@@ -12,7 +12,8 @@
     "check:browser": "node tests/browser.mjs",
     "check:budget": "python3 scripts/check_budget.py",
     "check:regression": "node tests/revision-browser.mjs",
-    "check:live": "node tests/live-browser.mjs"
+    "check:live": "node tests/live-browser.mjs",
+    "check:review": "node tests/review-browser.mjs"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.8",

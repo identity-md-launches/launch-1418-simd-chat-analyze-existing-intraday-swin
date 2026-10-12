@@ -48,7 +48,7 @@ try {
     for (const interval of ['5m', '15m', '1h', '4h']) {
       await page.getByRole('button', { name: interval, exact: true }).click();
       const axis = await page.locator('.price-chart').evaluate(svg => {
-        const ticks = [...svg.querySelectorAll('text')].filter(x => /^\d\d:\d\d$/.test(x.textContent));
+        const ticks = [...svg.querySelectorAll('.time-tick')];
         const labels = ticks.map(x => { const r = x.getBoundingClientRect(), b = x.getBBox(); return { text: x.textContent, x: r.x, right: r.right, localX: b.x, localRight: b.x + b.width, tick: x.x.baseVal[0].value }; });
         return { viewport: innerWidth, chartWidth: svg.viewBox.baseVal.width, plotWidth: svg.viewBox.baseVal.width - 76, labels, gaps: labels.slice(1).map((x, i) => x.x - labels[i].right), pageOverflow: document.documentElement.scrollWidth > innerWidth };
       });

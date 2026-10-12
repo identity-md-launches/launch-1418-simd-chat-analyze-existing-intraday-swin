@@ -1,4 +1,4 @@
-import type { BacktestConfig, BacktestResult, Candle, Snapshot, SourceKind, Strategy, Trade } from '../types';
+import type { BacktestConfig, BacktestResult, Candle, Snapshot, Source, SourceKind, Strategy, Trade } from '../types';
 import { adaptiveIndicators } from './analytics';
 
 export const DEFAULT_STRATEGY: Strategy = {
@@ -26,6 +26,16 @@ export const timeLabel = (n: number) =>
   new Date(n * 1000).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' });
 export const dateLabel = (n: number) =>
   new Date(n * 1000).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' });
+export const dateTimeLabel = (n: number) =>
+  `${new Date(n * 1000).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}, ${timeLabel(n)} UTC`;
+export function sourceFreshness(source: Source | undefined, asOf: number): 'ready' | 'stale' | 'unavailable' {
+  if (!source || source.status !== 'ready' || source.score === null || source.updatedAt === null)
+    return 'unavailable';
+  return asOf - source.updatedAt <= 900 && source.updatedAt <= asOf + 60 ? 'ready' : 'stale';
+}
+export const observationAge = (updatedAt: number | null, asOf: number) =>
+  updatedAt === null ? 'No observation' : updatedAt > asOf + 60 ? 'Timestamp ahead of market time'
+    : `${Math.max(0, Math.floor((asOf - updatedAt) / 60))}m ago`;
 
 export function ema(values: number[], period: number): number[] {
   const k = 2 / (period + 1);
@@ -102,11 +112,9 @@ export function aggregateSentiment(snapshot: Snapshot, weights: Record<SourceKin
     covered = 0;
   const requested = Object.values(weights).filter((w) => w > 0).length;
   for (const s of snapshot.sources) {
-    const fresh =
-      s.updatedAt !== null && snapshot.asOf - s.updatedAt <= 900 && s.updatedAt <= snapshot.asOf + 60;
-    if (s.status === 'ready' && s.score !== null && fresh && weights[s.kind] > 0) {
+    if (sourceFreshness(s, snapshot.asOf) === 'ready' && weights[s.kind] > 0) {
       total += weights[s.kind];
-      weighted += s.score * weights[s.kind];
+      weighted += s.score! * weights[s.kind];
       covered++;
     }
   }

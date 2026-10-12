@@ -1,4 +1,4 @@
-import { useEffect, useRef, type ReactNode } from 'react';
+import { useEffect, useRef, type ReactNode, type Ref } from 'react';
 import {
   ArrowDownRight,
   ArrowUpRight,
@@ -11,7 +11,7 @@ import {
   X,
 } from 'lucide-react';
 import { ASSETS } from './lib/data';
-import { compact, timeLabel } from './lib/engine';
+import { compact, sourceFreshness, timeLabel } from './lib/engine';
 import type { Asset, FeedItem, Source, SourceKind } from './types';
 
 export function AssetIcon({ asset, small = false }: { asset: Asset; small?: boolean }) {
@@ -82,19 +82,21 @@ export function Panel({
   action,
   children,
   className = '',
+  headingRef,
 }: {
   title?: string;
   subtitle?: string;
   action?: ReactNode;
   children: ReactNode;
   className?: string;
+  headingRef?: Ref<HTMLHeadingElement>;
 }) {
   return (
     <section className={`panel ${className}`}>
       {title && (
         <div className="panel-heading">
           <div>
-            <h2>{title}</h2>
+            <h2 ref={headingRef} tabIndex={headingRef ? -1 : undefined}>{title}</h2>
             {subtitle && <p className="muted small-text">{subtitle}</p>}
           </div>
           {action}
@@ -184,13 +186,29 @@ export function SourceBars({ sources }: { sources: Source[] }) {
     </div>
   );
 }
-export function Feed({ items, asOf, limit }: { items: FeedItem[]; asOf: number; limit?: number }) {
+export function SourceStatus({ source, asOf, demo }: { source?: Source; asOf: number; demo: boolean }) {
+  const status = sourceFreshness(source, asOf);
+  return (
+    <Badge tone={status === 'ready' ? (demo ? 'neutral' : 'positive') : 'warning'}>
+      {status === 'ready' ? (demo ? 'Demo' : 'Ready') : status === 'stale' ? 'Stale' : 'Unavailable'}
+    </Badge>
+  );
+}
+export function Feed({ items, asOf, limit, empty = 'unavailable' }: {
+  items: FeedItem[]; asOf: number; limit?: number;
+  empty?: 'unconnected' | 'unavailable' | 'filtered';
+}) {
   if (!items.length)
     return (
       <div className="empty-state">
-        <Radio size={24} />
-        <h3>No matching activity</h3>
-        <p>Choose another source or clear the search to see more activity.</p>
+        <Radio size={24} aria-hidden="true" />
+        <h3>{empty === 'unconnected' ? 'No sentiment service connected' : empty === 'filtered' ? 'No matching activity' : 'No source activity yet'}</h3>
+        <p>{empty === 'unconnected'
+          ? 'Connect a sentiment service to load source activity.'
+          : empty === 'filtered'
+            ? 'Choose another source or clear the search to see more activity.'
+            : 'The sentiment service has returned no activity. Check source availability in Connections.'}</p>
+        {empty !== 'filtered' && <a className="button secondary" href="#connections">Open Connections</a>}
       </div>
     );
   return (

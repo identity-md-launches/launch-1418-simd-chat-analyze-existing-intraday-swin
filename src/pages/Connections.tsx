@@ -10,8 +10,8 @@ import {
   RefreshCw,
   ShieldCheck,
 } from 'lucide-react';
-import { Badge, Panel, SourceIcon } from '../components';
-import { download } from '../lib/engine';
+import { Badge, Panel, SourceIcon, SourceStatus } from '../components';
+import { dateTimeLabel, download, observationAge } from '../lib/engine';
 import type { Snapshot, Strategy } from '../types';
 import type { MarketStream } from '../lib/live';
 
@@ -261,16 +261,13 @@ export default function Connections({
                           ? 'CoinDesk + Cointelegraph RSS · no key'
                           : 'Owner-configured on-chain score provider'}
                     </p>
+                    {source?.updatedAt != null && (
+                      <p className="muted small-text">
+                        Last observation: {dateTimeLabel(source.updatedAt)} ({observationAge(source.updatedAt, snapshot!.asOf)})
+                      </p>
+                    )}
                   </div>
-                  <Badge
-                    tone={snapshot?.mode === 'live' && source?.status === 'ready' ? 'positive' : 'neutral'}
-                  >
-                    {snapshot?.mode === 'demo'
-                      ? 'Demo'
-                      : source?.status === 'ready'
-                        ? 'Ready'
-                        : 'Unavailable'}
-                  </Badge>
+                  <SourceStatus source={source} asOf={snapshot?.asOf ?? 0} demo={snapshot?.mode === 'demo'} />
                 </div>
               );
             })}
